@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عيادة رحال للجلدية والليزر | 2 شارع المحافظة — حلب</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Cairo', 'sans-serif'],
+                    },
+                    colors: {
+                        derm: {
+                            forest: '#2F4838',   /* أخضر زيتوني طبي عميق */
+                            sage: '#4A6B55',     /* أخضر مريمي هادئ */
+                            mint: '#EAF1EC',     /* أخضر ناعم للبطاقات */
+                            ivory: '#FAF8F5',    /* عاجي دافئ مريح للعين */
+                            gold: '#B8924A',     /* ذهبي طبي ناعم */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .faq-item.active .faq-content {
+            max-height: 220px;
+        }
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body class="bg-derm-ivory text-slate-800 antialiased">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-200/70">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-2xl bg-derm-forest text-white flex items-center justify-center text-lg shadow-sm">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+                <div>
+                    <span class="font-extrabold text-base sm:text-lg text-derm-forest block leading-tight">عيادة رحال للجلدية والليزر</span>
+                    <span class="text-xs text-stone-500 font-medium">2 شارع المحافظة — حلب</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-stone-700">
+                <a href="#home" class="text-derm-forest font-bold">الرئيسية</a>
+                <a href="#services" class="hover:text-derm-forest transition">الجلدية والليزر</a>
+                <a href="#about" class="hover:text-derm-forest transition">عن العيادة</a>
+                <a href="#faq" class="hover:text-derm-forest transition">الأسئلة الشائعة</a>
+                <a href="#location" class="hover:text-derm-forest transition">الموقع والتواصل</a>
+            </nav>
+
+            <a href="#booking" class="bg-derm-forest hover:bg-derm-sage text-white px-5 py-2.5 rounded-full text-sm font-bold transition shadow-sm flex items-center gap-2">
+                <span>حجز موعد</span>
+                <i class="fa-solid fa-arrow-left text-xs"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-12 pb-16 lg:pt-20 lg:pb-24 px-4 bg-gradient-to-b from-white to-derm-ivory">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-derm-mint text-derm-forest text-xs font-bold border border-derm-forest/15">
+                    <i class="fa-solid fa-location-dot text-derm-gold"></i>
+                    <span>حلب – 2 شارع المحافظة | طب الأمراض الجلدية وتقنيات الليزر</span>
+                </div>
+
+                <h1 class="text-4xl sm:text-5xl lg:text-[52px] font-extrabold text-slate-900 leading-[1.22]">
+                    عناية جلدية متكاملة <br class="hidden sm:block">
+                    <span class="text-derm-forest">وتقنيات ليزر حديثة لبشرتك.</span>
+                </h1>
+
+                <p class="text-stone-600 text-base sm:text-lg leading-relaxed max-w-2xl">
+                    في عيادة رحال للجلدية والليزر بشارع المحافظة في حلب، نجمع بين التشخيص الطبي الدقيق للأمراض الجلدية وأحدث أجهزة الليزر والعناية بالبشرة لنمنحكِ نتائج آمنة وطبيعية.
+                </p>
+
+                <div class="flex flex-wrap items-center gap-4 pt-2">
+                    <a href="#booking" class="bg-derm-forest hover:bg-derm-sage text-white px-7 py-3.5 rounded-full font-bold text-sm sm:text-base transition shadow-md flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>احجز موعدك عبر واتساب</span>
+                    </a>
+                    <a href="#services" class="px-7 py-3.5 rounded-full font-bold text-sm sm:text-base text-derm-forest bg-white border border-stone-300 hover:border-derm-forest transition">
+                        استعراض الخدمات
+                    </a>
+                </div>
+
+                <div class="pt-4 flex flex-wrap items-center gap-6 text-sm text-stone-600 border-t border-stone-200/80">
+                    <div class="flex items-center gap-1.5 font-bold text-slate-900">
+                        <i class="fa-solid fa-snowflake text-derm-forest"></i>
+                        <span>أجهزة ليزر بارد حديثة</span>
+                    </div>
+                    <span class="text-stone-300">|</span>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-shield-virus text-derm-forest"></i>
+                        <span>تعقيم وخصوصية تامة</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5">
+                <div class="relative rounded-3xl overflow-hidden bg-white border border-stone-200/80 p-3 shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=900&q=80" 
+                         alt="عيادة رحال للجلدية والليزر في حلب" 
+                         class="w-full h-[380px] object-cover rounded-2xl">
+
+                    <div class="bg-derm-ivory rounded-2xl p-4 border border-stone-200/70 mt-3 flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <div class="w-11 h-11 rounded-full bg-derm-mint text-derm-forest flex items-center justify-center text-lg">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-stone-500">حجز واستفسارات الجلسات</div>
+                                <div class="font-bold text-slate-900 text-sm" dir="ltr">+963 953 950 444</div>
+                            </div>
+                        </div>
+                        <span class="px-3 py-1 rounded-full bg-derm-mint text-derm-forest text-xs font-bold">2 شارع المحافظة</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Olive Medical Highlights Bar -->
+    <section class="px-4 mb-16">
+        <div class="max-w-7xl mx-auto bg-derm-forest rounded-3xl p-8 sm:p-10 text-white shadow-xl">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-center">
+                <div class="bg-derm-sage rounded-2xl p-6 text-white border border-white/10">
+                    <div class="text-xs uppercase tracking-wider font-bold text-amber-200 mb-1">جلدية وليزر طبي</div>
+                    <div class="text-2xl font-extrabold mb-2">عناية مزدوجة</div>
+                    <p class="text-xs leading-relaxed text-stone-100">تشخيص علاجي للأمراض الجلدية مع أحدث جلسات الليزر والنضارة.</p>
+                </div>
+
+                <div class="px-4 sm:border-r border-white/15">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-amber-300">ليزر</div>
+                    <div class="font-bold text-sm mt-1">إزالة شعر ونضارة</div>
+                    <p class="text-xs text-stone-200/80 mt-1">جلسات مريحة بأنظمة تبريد متطورة تناسب مختلف أنواع البشرة.</p>
+                </div>
+
+                <div class="px-4 sm:border-r border-white/15">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-amber-300">100%</div>
+                    <div class="font-bold text-sm mt-1">أمان وتعقيم</div>
+                    <p class="text-xs text-stone-200/80 mt-1">التزام صارم بمعايير النظافة الطبية وسلامة الأجهزة.</p>
+                </div>
+
+                <div class="px-4 sm:border-r border-white/15">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-amber-300">مباشر</div>
+                    <div class="font-bold text-sm mt-1">تأكيد عبر واتساب</div>
+                    <p class="text-xs text-stone-200/80 mt-1">تنسيق فوري للمواعيد لتفادي الانتظار في العيادة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dermatology & Laser Services Section -->
+    <section id="services" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-derm-gold font-bold text-sm">خدماتنا المتخصصة</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">حلول متكاملة لصحة الجلد وجلسات الليزر</h2>
+                <p class="text-stone-600 text-sm sm:text-base mt-3">نقدم رعاية جلدية شاملة وبرامج ليزر مصممة بدقة لتمنحك نتائج واضحة ومستقرة.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-derm-ivory rounded-2xl p-7 border border-stone-200/80 hover:border-derm-forest transition">
+                    <div class="w-12 h-12 rounded-xl bg-derm-mint text-derm-forest flex items-center justify-center text-xl mb-5">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">إزالة الشعر بالليزر الطبي</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed mb-4">جلسات ليزر بارد آمنة وفعالة لكامل الجسم أو لمناطق محددة مع تبريد يحمي البشرة ويقلل الانزعاج.</p>
+                    <a href="#booking" class="text-derm-forest font-bold text-xs flex items-center gap-1.5 hover:underline">
+                        <span>احجز جلسة ليزر</span>
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                </div>
+
+                <div class="bg-derm-ivory rounded-2xl p-7 border border-stone-200/80 hover:border-derm-forest transition">
+                    <div class="w-12 h-12 rounded-xl bg-derm-mint text-derm-forest flex items-center justify-center text-xl mb-5">
+                        <i class="fa-solid fa-spa"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">علاج حب الشباب والندبات</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed mb-4">تشخيص وعلاج حالات حب الشباب النشطة ومعالجة الآثار والتصبغات السطحية بطرق طبية مدروسة.</p>
+                    <a href="#booking" class="text-derm-forest font-bold text-xs flex items-center gap-1.5 hover:underline">
+                        <span>احجز استشارة جلدية</span>
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                </div>
+
+                <div class="bg-derm-ivory rounded-2xl p-7 border border-stone-200/80 hover:border-derm-forest transition">
+                    <div class="w-12 h-12 rounded-xl bg-derm-mint text-derm-forest flex items-center justify-center text-xl mb-5">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">الليزر الكربوني وتنظيف البشرة</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed mb-4">تنظيف عميق للمسام، تقليل اللمعان، وتوحيد لون البشرة لاستعادة الإشراقة الطبيعية للوجه.</p>
+                    <a href="#booking" class="text-derm-forest font-bold text-xs flex items-center gap-1.5 hover:underline">
+                        <span>احجز جلسة نضارة</span>
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                </div>
+
+                <div class="bg-derm-ivory rounded-2xl p-7 border border-stone-200/80 hover:border-derm-forest transition">
+                    <div class="w-12 h-12 rounded-xl bg-derm-mint text-derm-forest flex items-center justify-center text-xl mb-5">
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">علاج الكلف والتصبغات</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed mb-4">برامج تفتيح آمنة وتقشير لطيف لعلاج التصبغات الجلدية والكلف مع الحفاظ على صحة الجلد.</p>
+                    <a href="#booking" class="text-derm-forest font-bold text-xs flex items-center gap-1.5 hover:underline">
+                        <span>استفسر عن العلاج</span>
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                </div>
+
+                <div class="bg-derm-ivory rounded-2xl p-7 border border-stone-200/80 hover:border-derm-forest transition">
+                    <div class="w-12 h-12 rounded-xl bg-derm-mint text-derm-forest flex items-center justify-center text-xl mb-5">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">علاج تساقط الشعر والميزوثيرابي</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed mb-4">تقوية بصيلات الشعر وتغذية البشرة بالفيتامينات والبلازما لتحفيز التجدد الطبيعي.</p>
+                    <a href="#booking" class="text-derm-forest font-bold text-xs flex items-center gap-1.5 hover:underline">
+                        <span>احجز موعد شعر وبشرة</span>
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                </div>
+
+                <div class="bg-derm-ivory rounded-2xl p-7 border border-stone-200/80 hover:border-derm-forest transition">
+                    <div class="w-12 h-12 rounded-xl bg-derm-mint text-derm-forest flex items-center justify-center text-xl mb-5">
+                        <i class="fa-solid fa-shield-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">الأكزيما والحساسية الجلدية</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed mb-4">فحص وعلاج الالتهابات الجلدية، الأكزيما، والطفح الجلدي لكافة الأعمار بمتابعة دقيقة.</p>
+                    <a href="#booking" class="text-derm-forest font-bold text-xs flex items-center gap-1.5 hover:underline">
+                        <span>احجز موعد فحص</span>
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & FAQ Section -->
+    <section id="about" class="py-20 px-4 bg-derm-ivory">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-5">
+                <div class="bg-white rounded-3xl p-6 border border-stone-200/80 shadow-sm space-y-4">
+                    <div class="flex items-center gap-4">
+                        <div class="w-16 h-16 rounded-2xl bg-derm-forest text-white flex items-center justify-center text-2xl font-bold">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-extrabold text-slate-900">عيادة رحال للجلدية والليزر</h3>
+                            <p class="text-derm-forest text-sm font-semibold">2 شارع المحافظة — حلب</p>
+                        </div>
+                    </div>
+                    <p class="text-stone-600 text-sm leading-relaxed">
+                        نلتزم بتقديم تجربة طبية وتجميلية تجمع بين الخبرة في طب الأمراض الجلدية والتجهيزات الحديثة لجلسات الليزر في موقع مركزي يسهل الوصول إليه بشارع المحافظة.
+                    </p>
+                    <div class="grid grid-cols-2 gap-3 pt-2">
+                        <div class="p-3 rounded-xl bg-derm-ivory text-xs font-semibold text-stone-700 flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-derm-forest"></i>
+                            <span>موقع مركزي بحلب</span>
+                        </div>
+                        <div class="p-3 rounded-xl bg-derm-ivory text-xs font-semibold text-stone-700 flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-derm-forest"></i>
+                            <span>متابعة دقيقة للحالات</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="faq" class="lg:col-span-7 space-y-4">
+                <span class="text-derm-gold font-bold text-sm">إجابات واضحة</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 mb-6">الأسئلة الشائعة للمراجعين</h2>
+
+                <div class="faq-item active border border-stone-200 rounded-2xl p-5 cursor-pointer bg-white" onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center font-bold text-slate-900">
+                        <span>أين تقع عيادة رحال للجلدية والليزر بالتحديد؟</span>
+                        <i class="fa-solid fa-plus text-derm-forest faq-icon transition-transform"></i>
+                    </div>
+                    <div class="faq-content text-stone-600 text-sm leading-relaxed">
+                        <p class="pt-3">تقع العيادة في حلب — 2 شارع المحافظة، ويمكنك فتح الموقع مباشرة عبر خريطة جوجل أسفل الصفحة لسهولة الوصول.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item border border-stone-200 rounded-2xl p-5 cursor-pointer bg-white" onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center font-bold text-slate-900">
+                        <span>كيف يمكنني حجز موعد جلسة ليزر أو استشارة جلدية؟</span>
+                        <i class="fa-solid fa-plus text-derm-forest faq-icon transition-transform"></i>
+                    </div>
+                    <div class="faq-content text-stone-600 text-sm leading-relaxed">
+                        <p class="pt-3">يمكنك تعبئة نموذج الحجز في الموقع أو مراسلة العيادة مباشرة عبر واتساب على الرقم 0953950444 لتنسيق الموعد المناسب.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item border border-stone-200 rounded-2xl p-5 cursor-pointer bg-white" onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center font-bold text-slate-900">
+                        <span>هل جلسات الليزر مناسبة لجميع أنواع البشرة؟</span>
+                        <i class="fa-solid fa-plus text-derm-forest faq-icon transition-transform"></i>
+                    </div>
+                    <div class="faq-content text-stone-600 text-sm leading-relaxed">
+                        <p class="pt-3">نعم، يتم ضبط إعدادات الجهاز وفق لون البشرة وكثافة الشعر قبل بدء الجلسة لضمان أعلى درجات الأمان والفعالية.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking, Location & Interactive Google Map Section -->
+    <section id="booking" class="py-16 px-4 bg-white">
+        <div class="max-w-7xl mx-auto bg-derm-forest rounded-3xl overflow-hidden shadow-xl grid lg:grid-cols-12">
+
+            <div id="location" class="lg:col-span-5 p-8 sm:p-10 text-white flex flex-col justify-between bg-gradient-to-br from-derm-forest to-stone-900">
+                <div class="space-y-5">
+                    <span class="inline-block px-3 py-1 rounded-full bg-white/10 text-amber-200 text-xs font-bold">الموقع والتواصل</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold leading-snug">احجز موعدك في عيادة رحال للجلدية والليزر</h2>
+
+                    <div class="space-y-3.5 text-sm">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot text-amber-300 mt-1"></i>
+                            <div>
+                                <div class="font-bold">العنوان</div>
+                                <div class="text-stone-200/85">2 شارع المحافظة، حلب، سوريا</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <i class="fa-brands fa-whatsapp text-amber-300 mt-1"></i>
+                            <div>
+                                <div class="font-bold">واتساب وهاتف العيادة</div>
+                                <div class="text-stone-200/85" dir="ltr">+963 953 950 444</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Google Maps Embed (2 Al Muhafazah St, Aleppo) -->
+                    <div class="pt-2">
+                        <div class="rounded-2xl overflow-hidden border border-white/15 shadow-lg bg-stone-800/50">
+                            <iframe 
+                                title="موقع عيادة رحال للجلدية والليزر - 2 شارع المحافظة، حلب"
+                                src="https://maps.google.com/maps?q=%D8%B9%D9%8A%D8%A7%D8%AF%D8%A9%20%D8%B1%D8%AD%D8%A7%D9%84%20%D9%84%D9%84%D8%AC%D9%84%D8%AF%D9%8A%D8%A9%20%D9%88%D8%A7%D9%84%D9%84%D9%8A%D8%B2%D8%B1%202%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9%20%D8%AD%D9%84%D8%A8&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                                class="w-full h-48 border-0" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=عيادة+رحال+للجلدية+والليزر+2+شارع+المحافظة+حلب" target="_blank" rel="noopener noreferrer" class="mt-2.5 inline-flex items-center gap-1.5 text-xs font-bold text-amber-300 hover:text-white transition">
+                            <i class="fa-solid fa-diamond-turn-right"></i>
+                            <span>فتح الموقع في تطبيق خرائط جوجل للملاحة</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pt-5 mt-5 border-t border-white/15 text-xs text-stone-300/80">
+                    * يُنصح بالحجز المسبق عبر واتساب لتنسيق موعد الجلسة أو الكشف الطبي.
+                </div>
+            </div>
+
+            <div class="lg:col-span-7 p-8 sm:p-12 bg-derm-ivory flex flex-col justify-center">
+                <h3 class="text-2xl font-extrabold text-slate-900 mb-2">نموذج حجز موعد</h3>
+                <p class="text-stone-500 text-sm mb-6">سيتم فتح محادثة واتساب جاهزة ببياناتك لإرسالها إلى العيادة بضغطة واحدة.</p>
+
+                <form id="clinicBookingForm" class="space-y-4">
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-stone-700 mb-1.5">الاسم الكامل *</label>
+                            <input type="text" id="pName" required placeholder="أدخل اسمك الكريم" class="w-full px-4 py-3 rounded-xl border border-stone-300 bg-white focus:border-derm-forest focus:ring-2 focus:ring-derm-mint outline-none text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-stone-700 mb-1.5">الخدمة المطلوبة</label>
+                            <select id="pService" class="w-full px-4 py-3 rounded-xl border border-stone-300 bg-white focus:border-derm-forest focus:ring-2 focus:ring-derm-mint outline-none text-sm">
+                                <option value="إزالة الشعر بالليزر الطبي">إزالة الشعر بالليزر الطبي</option>
+                                <option value="فحص واستشارة أمراض جلدية">فحص واستشارة أمراض جلدية</option>
+                                <option value="ليزر كربوني وتنظيف بشرة">ليزر كربوني وتنظيف بشرة</option>
+                                <option value="علاج حب الشباب والتصبغات">علاج حب الشباب والتصبغات</option>
+                                <option value="جلسات شعر وميزوثيرابي">جلسات شعر وميزوثيرابي</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-stone-700 mb-1.5">اليوم والوقت المفضل</label>
+                        <input type="text" id="pTime" placeholder="مثال: يوم الإثنين الساعة 4:00 عصراً" class="w-full px-4 py-3 rounded-xl border border-stone-300 bg-white focus:border-derm-forest focus:ring-2 focus:ring-derm-mint outline-none text-sm">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-stone-700 mb-1.5">ملاحظات إضافية (اختياري)</label>
+                        <textarea id="pNotes" rows="3" placeholder="اذكر أي استفسار أو حالة خاصة..." class="w-full px-4 py-3 rounded-xl border border-stone-300 bg-white focus:border-derm-forest focus:ring-2 focus:ring-derm-mint outline-none text-sm"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-derm-forest hover:bg-derm-sage text-white font-bold py-3.5 rounded-xl transition shadow-md flex items-center justify-center gap-2 text-sm sm:text-base">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>إرسال طلب الحجز عبر واتساب</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-derm-ivory border-t border-stone-200/80 py-8 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-stone-500">
+            <div class="font-bold text-stone-700">عيادة رحال للجلدية والليزر — 2 شارع المحافظة، حلب</div>
+            <div>حلب، سوريا | جميع الحقوق محفوظة © 2026</div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleFaq(element) {
+            element.classList.toggle('active');
+        }
+
+        document.getElementById('clinicBookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('pName').value.trim();
+            const service = document.getElementById('pService').value;
+            const time = document.getElementById('pTime').value.trim() || 'أقرب موعد متاح';
+            const notes = document.getElementById('pNotes').value.trim();
+
+            let text = `مرحباً عيادة رحال للجلدية والليزر، أرغب بحجز موعد:%0A`;
+            text += `• الاسم: ${name}%0A`;
+            text += `• الخدمة: ${service}%0A`;
+            text += `• الموعد المفضل: ${time}`;
+            if (notes) {
+                text += `%0A• ملاحظات: ${notes}`;
+            }
+
+            window.open(`https://wa.me/963953950444?text=${text}`, '_blank');
+        });
+    </script>
+</body>
+</html>
